@@ -31,7 +31,11 @@ celery -A beat beat -l info &
 celery -A task.celery worker -l info &
 ```
 10. Utilice la documentación en [Postman](https://documenter.getpostman.com/view/20323572/2s84LF4GMM), de la API de la aplicación para que realice las peticiones que requiera. 
-Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la documentaciónç
+Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la documentación
+
+## Proyecto 1 - Entrega 1
+
+[Link](https://github.com/criverao/audio-convertion-tool/blob/master/Proyecto%201%20entrega%201%20-%20Arquitectura%2C%20conclusiones%20y%20consideraciones.pdf)
 
 ## Documento de plan de pruebas
 
