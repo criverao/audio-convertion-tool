@@ -35,8 +35,8 @@ Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la doc
 
 ## Documento de plan de pruebas
 
-[Link]([https://uniandes-my.sharepoint.com/:b:/g/personal/c_riverao_uniandes_edu_co/EaEO4a3MdLxBsNWkHPQq0BsBo2uMIxZNgTC0TfIsEBsKGA?e=TJfN1k](https://github.com/criverao/audio-convertion-tool/blob/master/Plan%20de%20pruebas.pdf))
+[Link](https://github.com/criverao/audio-convertion-tool/blob/master/Plan%20de%20pruebas.pdf)
 
 ## Documento de Escenarios y pruebas de Estrés API RESTy Batch
 
-[Link](https://uniandes-my.sharepoint.com/:b:/g/personal/c_riverao_uniandes_edu_co/EUdh0yTwf6tHmaPHMv59b0EB6qxdSqrTfux2Z2j1Sdx3SA?e=mzNnsq)
+[Link](https://github.com/criverao/audio-convertion-tool/blob/master/Escenario%20y%20Pruebas%20de%20Estre%CC%81s%20API%20REST%20y%20Batch.pdf)
