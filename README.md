@@ -44,3 +44,10 @@ Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la doc
 ## Documento de Escenarios y pruebas de Estrés API RESTy Batch
 
 [Link](https://github.com/criverao/audio-convertion-tool/blob/master/Escenario%20y%20Pruebas%20de%20Estre%CC%81s%20API%20REST%20y%20Batch.pdf)
+
+## Video Sustentacion Semana 3
+
+[Link](https://user-images.githubusercontent.com/36201331/199156759-f245be5d-4347-4216-b0ed-81b8872f5011.mp4)
+
+
+
