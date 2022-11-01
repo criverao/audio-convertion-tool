@@ -33,24 +33,19 @@ celery -A task.celery worker -l info &
 10. Utilice la documentación en [Postman](https://documenter.getpostman.com/view/20323572/2s84LF4GMM), de la API de la aplicación para que realice las peticiones que requiera. 
 Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la documentación
 
-## Proyecto 1 - Entrega 1
+## Proyecto - Entrega 1
 
-[Link](https://github.com/criverao/audio-convertion-tool/blob/master/Proyecto%201%20entrega%201%20-%20Arquitectura%2C%20conclusiones%20y%20consideraciones.pdf)
+[Proyecto entrega Arquitectura conclusiones consideraciones.pdf](https://github.com/criverao/audio-convertion-tool/blob/master/Proyecto%201%20entrega%201%20-%20Arquitectura%2C%20conclusiones%20y%20consideraciones.pdf)
 
-## Documento de plan de pruebas
+[Plan de pruebas.docx](https://github.com/criverao/audio-convertion-tool/blob/master/Plan%20de%20pruebas.pdf)
 
-[Link](https://github.com/criverao/audio-convertion-tool/blob/master/Plan%20de%20pruebas.pdf)
+[Escenario y Pruebas de Estrés API REST y Batch.docx](https://github.com/criverao/audio-convertion-tool/blob/master/Escenario%20y%20Pruebas%20de%20Estre%CC%81s%20API%20REST%20y%20Batch.pdf)
 
-## Documento de Escenarios y pruebas de Estrés API RESTy Batch
-
-[Link](https://github.com/criverao/audio-convertion-tool/blob/master/Escenario%20y%20Pruebas%20de%20Estre%CC%81s%20API%20REST%20y%20Batch.pdf)
-
-## Video Sustentación Semana 3
-
-[Link](https://user-images.githubusercontent.com/36201331/199156759-f245be5d-4347-4216-b0ed-81b8872f5011.mp4)
+## Proyecto - Entrega 2
 
 [Escenario y Pruebas de Estrés API REST y Batch.docx](https://github.com/criverao/audio-convertion-tool/files/9907092/Escenario.y.Pruebas.de.Estres.API.REST.y.Batch.docx)
 
 [Plan de pruebas.docx](https://github.com/criverao/audio-convertion-tool/files/9907091/Plan.de.pruebas.docx)
 
+[Video Sustentación Semana 3](https://user-images.githubusercontent.com/36201331/199156759-f245be5d-4347-4216-b0ed-81b8872f5011.mp4)
 
