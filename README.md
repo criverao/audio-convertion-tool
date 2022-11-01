@@ -49,5 +49,8 @@ Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la doc
 
 [Link](https://user-images.githubusercontent.com/36201331/199156759-f245be5d-4347-4216-b0ed-81b8872f5011.mp4)
 
+[Escenario y Pruebas de Estrés API REST y Batch.docx](https://github.com/criverao/audio-convertion-tool/files/9907092/Escenario.y.Pruebas.de.Estres.API.REST.y.Batch.docx)
+
+[Plan de pruebas.docx](https://github.com/criverao/audio-convertion-tool/files/9907091/Plan.de.pruebas.docx)
 
 
