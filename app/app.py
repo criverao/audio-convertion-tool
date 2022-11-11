@@ -7,17 +7,19 @@ from flask import Flask
 
 
 def create_app(config_name):
-    app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:postgres@192.168.1.57:5432/postgres'
+    app = Flask(__name__)  
+    app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:S/K..g?MVGUbg);g@34.132.127.130:5432/postgres'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['JWT_SECRET_KEY']='frase-secreta'
     app.config['PROPAGATE_EXCEPTIONS']=True
-    app.config['UPLOAD_FOLDER']='/home/chgarciaa1/archivos'
+    app.config['UPLOAD_FOLDER']='/mnt/archivos'
+    app.config['BUCKET']='file-storage-audio'
+    app.config['FOLDER']='archivos'
+    app.config['TEMP_FOLDER']='/home/cesa96_gmail_com/temp_files'
+    app.config['KEY_FILE']='/home/cesa96_gmail_com/key_store/northern-symbol-366812-a5177107a683.json'
     return app
 
 app = create_app('default')
-if __name__ == "__main__":
-    app.run()
 app_context = app.app_context()
 app_context.push()
 
