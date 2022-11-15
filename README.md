@@ -51,6 +51,12 @@ Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la doc
 
 ## Proyecto - Entrega 3
 
+[Escenario y Pruebas de Estrés API REST y Batch.pdf](https://github.com/criverao/audio-convertion-tool/files/10009579/Escenario.y.Pruebas.de.Estres.API.REST.y.Batch.pdf)
+
+[Plan de pruebas.pdf](https://github.com/criverao/audio-convertion-tool/files/10009580/Plan.de.pruebas.pdf)
+
+[Arquitectura conclusiones y consideraciones.pdf](https://github.com/criverao/audio-convertion-tool/files/10009578/Arquitectura.conclusiones.y.consideraciones.pdf)
+
 [Video Sustentación Semana 5](https://user-images.githubusercontent.com/98676704/201826559-62bf4d35-4db5-4ce3-8cef-07189c49b380.mp4)
 
 
