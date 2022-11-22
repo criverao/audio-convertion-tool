@@ -60,4 +60,12 @@ Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la doc
 [Video Sustentación Semana 5](https://user-images.githubusercontent.com/98676704/201826559-62bf4d35-4db5-4ce3-8cef-07189c49b380.mp4)
 
 
+## Proyecto - Entrega 4
+
+[Escenario y Pruebas de Estrés API REST y Batch.docx](https://github.com/criverao/audio-convertion-tool/files/10063663/Escenario.y.Pruebas.de.Estres.API.REST.y.Batch.docx)
+
+[Plan de pruebas.docx](https://github.com/criverao/audio-convertion-tool/files/10063664/Plan.de.pruebas.docx)
+
+[Arquitectura conclusiones y consideraciones.docx](https://github.com/criverao/audio-convertion-tool/files/10063666/Arquitectura.conclusiones.y.consideraciones.docx)
+
 
