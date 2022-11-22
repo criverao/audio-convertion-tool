@@ -17,6 +17,8 @@ def create_app(config_name):
     app.config['FOLDER']='archivos'
     app.config['TEMP_FOLDER']='/home/cesa96_gmail_com/temp_files'
     app.config['KEY_FILE']='/home/cesa96_gmail_com/key_store/northern-symbol-366812-a5177107a683.json'
+    app.config['PROJECT_ID']='northern-symbol-366812'
+    app.config['TOPIC_ID']='AudioConverter'
     return app
 
 app = create_app('default')

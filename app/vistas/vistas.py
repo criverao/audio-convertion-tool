@@ -12,8 +12,10 @@ from datetime import datetime
 from sqlalchemy import desc
 from flask import current_app, send_from_directory
 from werkzeug.utils import secure_filename
-from google.cloud import storage
-
+from google.cloud import storage, pubsub_v1
+from concurrent import futures
+from collections.abc import Callable
+from  google.oauth2 import service_account
 
 celery_app = Celery(__name__, broker='redis://localhost:6379/0')
 
@@ -23,6 +25,17 @@ def registrar_log(*args):
 
 task_schema = TaskSchema()
 usuario_schema = UsuarioSchema()
+
+def get_callback(publish_future: pubsub_v1.publisher.futures.Future, data: str) -> Callable[[pubsub_v1.publisher.futures.Future], None]:
+    def callback(publish_future: pubsub_v1.publisher.futures.Future) -> None:
+        try:
+            # Wait 60 seconds for the publish call to succeed.
+            print(publish_future.result(timeout=60))
+        except futures.TimeoutError:
+            print(f"Publishing {data} timed out.")
+
+    return callback
+
 
 
 def crear_carpetas(usuario):
@@ -67,6 +80,18 @@ class VistaTasks(Resource):
         #file.save(os.path.join(ruta, filename))  
         upload_blob(file, filename, usuario.nombre)
         db.session.commit()
+
+#        os.environ['GOOGLE_APPLICATION_CREDENTIALS']=current_app.config['KEY_FILE']
+
+        cred = service_account.Credentials.from_service_account_file(filename = current_app.config['KEY_FILE']) #or just from_service_account_file('./auth.json')
+        publisher = pubsub_v1.PublisherClient(credentials = cred)
+        topic_path = publisher.topic_path(current_app.config['PROJECT_ID'], current_app.config['TOPIC_ID'])
+        publish_future = publisher.publish(topic_path, str(nueva_task.id).encode("utf-8"))
+        publish_futures = []
+        # Non-blocking. Publish failures are handled in the callback function.
+        publish_future.add_done_callback(get_callback(publish_future, str(nueva_task.id)))
+        publish_futures.append(publish_future)
+        futures.wait(publish_futures, return_when=futures.ALL_COMPLETED)
         return task_schema.dump(nueva_task)
 
     @jwt_required()
