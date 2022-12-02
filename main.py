@@ -25,7 +25,7 @@ def create_app(config_name):
     app.config['UPLOAD_FOLDER']='/mnt/archivos'
     app.config['BUCKET']='file-storage-audio'
     app.config['FOLDER']='archivos'
-    app.config['TEMP_FOLDER']='temp_files'
+    app.config['TEMP_FOLDER']='/tmp'
     app.config['KEY_FILE']='key_store/northern-symbol-366812-a5177107a683.json'
     app.config['PROJECT_ID']='northern-symbol-366812'
     app.config['TOPIC_ID']='AudioConverter'
@@ -71,7 +71,8 @@ def callback(message):
         message.ack()
 
 
-db.app = create_app('default')
+app = create_app('default')
+db.app = app
 db.app_context = db.app.app_context()
 db.app_context.push()
 db.init_app(db.app)
@@ -121,17 +122,16 @@ def enviar_notificacion(usuario, archivoOrigen, archivoDestino):
         server.send_message(msg)
 
 
-@db.app.route('/')
+@app.route('/')
 def root():
     # For the sake of example, use static information to inflate the template.
     # This will be replaced with real information in later steps.
-    dummy_times = [datetime.datetime(2018, 1, 1, 10, 0, 0),
-                   datetime.datetime(2018, 1, 2, 10, 30, 0),
-                   datetime.datetime(2018, 1, 3, 11, 0, 0),
-                   ]
+    return 'Hello World'
 
-    return render_template('index.html', times=dummy_times)
-
+@app.route('/_ah/warmup')
+def warmup():
+    # Handle your warmup logic here, e.g. set up a database connection pool
+    return '', 200, {}
 
 if __name__ == '__main__':
     db.app.run(host='0.0.0.0', port=8080, debug=True)
