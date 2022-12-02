@@ -15,7 +15,7 @@ def create_app(config_name):
     app.config['UPLOAD_FOLDER']='/mnt/archivos'
     app.config['BUCKET']='file-storage-audio'
     app.config['FOLDER']='archivos'
-    app.config['TEMP_FOLDER']='temp_files'
+    app.config['TEMP_FOLDER']='/tmp'
     app.config['KEY_FILE']='northern-symbol-366812-a5177107a683.json'
     app.config['PROJECT_ID']='northern-symbol-366812'
     app.config['TOPIC_ID']='AudioConverter'
