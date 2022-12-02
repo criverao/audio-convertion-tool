@@ -2,7 +2,7 @@ from datetime import datetime
 from fileinput import filename
 import os
 from flask import request
-from ..modelos import db,  Usuario, UsuarioSchema, Task, TaskSchema, Status, NewFormat
+from modelos import db,  Usuario, UsuarioSchema, Task, TaskSchema, Status, NewFormat
 from flask_restful import Resource
 from sqlalchemy.exc import IntegrityError
 from flask_jwt_extended import jwt_required, create_access_token, get_jwt_identity
