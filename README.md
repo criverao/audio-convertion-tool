@@ -70,10 +70,10 @@ Si desea puede autenticarse utilizando un usuario de ejemplo utilizado en la doc
 
 ## Proyecto - Entrega 5
 
-[Escenario y Pruebas de Estrés API REST y Batch.docx]()
+[Escenario y Pruebas de Estrés API REST y Batch]()
 
-[Plan de pruebas.docx]()
+[Plan de pruebas]()
 
-[Arquitectura conclusiones y consideraciones.docx]()
+[Arquitectura conclusiones y consideraciones]()
 
 [Video Sustentación Semana 8](https://uniandes-my.sharepoint.com/:v:/g/personal/c_riverao_uniandes_edu_co/ET1kpMOUNHdIoO7yOaKYvGcBNP-ReSJYeciKN-xyJTdGSQ?e=IVR4mX)
