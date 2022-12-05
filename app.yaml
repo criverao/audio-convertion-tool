@@ -14,8 +14,7 @@
 
 runtime: python39
 
-automatic_scaling:
-  max_instances: 3
+#entrypoint: gunicorn -c gunicorn.conf.py -b :$PORT main:app
 
 #handlers:
   # This handler routes all requests not caught above to your main app. It is
